@@ -8,8 +8,3 @@ pub async fn test(){
     entities::UserEntity::find_by_id(Uuid::new_v4()).one(&mock).await;
 }
 
-#[tokio::test]
-pub async fn test_three(){
-    let mock = MockDatabase::new(DbBackend::Postgres).into_connection();
-    entities::user::database_helpers::f
-}
