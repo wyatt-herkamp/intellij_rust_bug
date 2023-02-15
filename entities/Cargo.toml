@@ -7,6 +7,6 @@ edition = "2021"
 
 [dependencies]
 serde = { version = "1.0" ,features = ["derive"] }
-sea-orm = { version = "0.11", features = ["runtime-actix-rustls","macros","postgres-array","sqlx-postgres"] }
-sqlx = "0.6"
+sea-orm = { version = "0.11", features = ["runtime-tokio-rustls","macros","mock"] }
+sqlx = { version = "0.6", features=["runtime-tokio-rustls"] }
 serde_json = "1.0.91"
